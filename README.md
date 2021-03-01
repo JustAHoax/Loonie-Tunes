@@ -1,5 +1,11 @@
+# This is currently Windows ONLY sorry, I will work towards making this multiplatform supported
+
 # LoonieTunes
 Hey everyone! This is a windows Desktop application, which I have named "Loonie Tunes". It is designed to analyze the AppDate.lua file that TradeSkillMaster Desktop application outputs. It will generate Final csv document, or in the application a csv you can copy. This can then be pasted into a spreadsheet as backend pricing data.
+
+# Support Me!
+## How
+If you'd like to support me and have access to my Spreadsheet that makes use of this CSV output, head over to my patreon page. You can be a part of future updates to this app, as well as anything else I work on. Thank you!
 
 ## Installation
 To install download the LoonieTunes.msi file, and install the application.
