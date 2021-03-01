@@ -16,6 +16,8 @@ namespace Loonie_Tunes
 
         public List<AuctionItem> ParseTSM(string s, IProgress<int> progress, string realmName)
         {
+            Toks.Clear();
+            AuctionItems.Clear();
             const string qs = @"\\""|i:";
             var realmData = s.Split(new[] { realmName }, StringSplitOptions.None)[1];
             string searchValue = "data=";
