@@ -7,8 +7,8 @@ namespace Loonie_Tunes.Functions
 {
     public class StringStuff
     {
-        string usRealms = "Loonie_Tunes.Resources.US-RealmList.txt";
-        string euRealms = "Loonie_Tunes.Resources.EU-RealmList.txt";
+        private readonly string usRealms = "Loonie_Tunes.Resources.US-RealmList.txt";
+        private readonly string euRealms = "Loonie_Tunes.Resources.EU-RealmList.txt";
         public List<string> BuildStringArrayContains(string text, string region)
         {
             var realmList = new List<string>();

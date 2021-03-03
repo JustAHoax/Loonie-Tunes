@@ -67,7 +67,7 @@ namespace Loonie_Tunes
                 var allRecords = csv.EnumerateRecords(wowItems);
                 recordsLength = allRecords.Count<WoWItem>();
             }
-            var percentComplete = 0;
+
             var iterator = 0;
             assembly = Assembly.GetExecutingAssembly();
             resourceName = resourcePath;
@@ -80,6 +80,7 @@ namespace Loonie_Tunes
                 csv.ReadHeader();
 
                 var records = new List<WoWItem>();
+                int percentComplete;
                 while (csv.Read())
                 {
                     var wowItemRecords = new WoWItem

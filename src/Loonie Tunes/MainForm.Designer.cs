@@ -29,6 +29,7 @@ namespace Loonie_Tunes
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnCopy = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
@@ -44,29 +45,35 @@ namespace Loonie_Tunes
             this.cmbRealmName = new System.Windows.Forms.ComboBox();
             this.cmbRegion = new System.Windows.Forms.ComboBox();
             this.btnAppData = new System.Windows.Forms.Button();
+            this.lblVersion = new System.Windows.Forms.Label();
+            this.tmrOld = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnCopy
             // 
+            this.btnCopy.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCopy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCopy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCopy.Location = new System.Drawing.Point(315, 380);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(186, 36);
-            this.btnCopy.TabIndex = 21;
+            this.btnCopy.TabIndex = 4;
             this.btnCopy.Text = "Copy CSV to Clipboard";
-            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.UseVisualStyleBackColor = false;
             this.btnCopy.Visible = false;
-            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            this.btnCopy.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
             // btnBrowse
             // 
+            this.btnBrowse.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBrowse.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.Location = new System.Drawing.Point(327, 112);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(159, 53);
-            this.btnBrowse.TabIndex = 20;
+            this.btnBrowse.TabIndex = 0;
             this.btnBrowse.Text = "Browse...";
-            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // label4
@@ -115,26 +122,30 @@ namespace Loonie_Tunes
             // 
             // btnProg
             // 
+            this.btnProg.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnProg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProg.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProg.Location = new System.Drawing.Point(329, 280);
             this.btnProg.Name = "btnProg";
             this.btnProg.Size = new System.Drawing.Size(159, 53);
-            this.btnProg.TabIndex = 13;
+            this.btnProg.TabIndex = 3;
             this.btnProg.Text = "Convert";
-            this.btnProg.UseVisualStyleBackColor = true;
+            this.btnProg.UseVisualStyleBackColor = false;
             this.btnProg.Visible = false;
-            this.btnProg.Click += new System.EventHandler(this.btnProg_Click);
+            this.btnProg.Click += new System.EventHandler(this.BtnProg_Click);
             // 
             // btnHelp
             // 
+            this.btnHelp.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHelp.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.Location = new System.Drawing.Point(642, 365);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(127, 51);
-            this.btnHelp.TabIndex = 12;
+            this.btnHelp.TabIndex = 6;
             this.btnHelp.Text = "Need Help?";
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // lblProgress
             // 
@@ -173,7 +184,7 @@ namespace Loonie_Tunes
             this.cmbRealmName.Location = new System.Drawing.Point(315, 204);
             this.cmbRealmName.Name = "cmbRealmName";
             this.cmbRealmName.Size = new System.Drawing.Size(192, 21);
-            this.cmbRealmName.TabIndex = 25;
+            this.cmbRealmName.TabIndex = 2;
             // 
             // cmbRegion
             // 
@@ -185,26 +196,43 @@ namespace Loonie_Tunes
             this.cmbRegion.Location = new System.Drawing.Point(610, 174);
             this.cmbRegion.Name = "cmbRegion";
             this.cmbRegion.Size = new System.Drawing.Size(40, 21);
-            this.cmbRegion.TabIndex = 26;
+            this.cmbRegion.TabIndex = 1;
             this.cmbRegion.Text = "US";
             // 
             // btnAppData
             // 
+            this.btnAppData.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAppData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAppData.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppData.Location = new System.Drawing.Point(642, 282);
             this.btnAppData.Name = "btnAppData";
             this.btnAppData.Size = new System.Drawing.Size(127, 51);
-            this.btnAppData.TabIndex = 27;
+            this.btnAppData.TabIndex = 5;
             this.btnAppData.Text = "Open File Location";
-            this.btnAppData.UseVisualStyleBackColor = true;
-            this.btnAppData.Click += new System.EventHandler(this.btnAppData_Click);
+            this.btnAppData.UseVisualStyleBackColor = false;
+            this.btnAppData.Click += new System.EventHandler(this.BtnAppData_Click);
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Location = new System.Drawing.Point(697, 428);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(72, 13);
+            this.lblVersion.TabIndex = 28;
+            this.lblVersion.Text = "Version: 1.0.6";
+            // 
+            // tmrOld
+            // 
+            this.tmrOld.Interval = 5000;
+            this.tmrOld.Tick += new System.EventHandler(this.TmrOld_Tick);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnAppData);
             this.Controls.Add(this.cmbRegion);
             this.Controls.Add(this.cmbRealmName);
@@ -247,5 +275,7 @@ namespace Loonie_Tunes
         private System.Windows.Forms.ComboBox cmbRealmName;
         private System.Windows.Forms.ComboBox cmbRegion;
         private System.Windows.Forms.Button btnAppData;
+        private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Timer tmrOld;
     }
 }

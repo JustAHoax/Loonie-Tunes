@@ -11,10 +11,11 @@ namespace Loonie_Tunes
 {
     public partial class MainForm : Form
     {
-        static CsvParse csvParse;
-        static ClipBoard clipBoard;
-        static StringStuff stringStuff;
-        BindingSource bindingSource;
+        private const string V = "txt files (*.txt)|*.Lua|All files (*.*)|*.*";
+        private static CsvParse csvParse;
+        private static ClipBoard clipBoard;
+        private static StringStuff stringStuff;
+        private BindingSource bindingSource;
         private string rootDir;
         public string fileContent;
 
@@ -22,12 +23,12 @@ namespace Loonie_Tunes
         {
             InitializeComponent();
         }
-        private async void btnProg_Click(object sender, EventArgs e)
+        private async void BtnProg_Click(object sender, EventArgs e)
         {
             if (txtPath.Text != "" && txtPath.Text.IndexOf("tradeskillmaster_apphelper\\appdata.lua", StringComparison.OrdinalIgnoreCase) >= 0)
             {
-                var assembly = Assembly.GetExecutingAssembly();
-                var wowItemCsv = "Loonie_Tunes.Resources.AuctionItemNames.csv";
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                const string wowItemCsv = "Loonie_Tunes.Resources.AuctionItemNames.csv";
 
                 lblProgress.Visible = true;
                 progBar.Visible = true;
@@ -68,7 +69,7 @@ namespace Loonie_Tunes
             }
         }
 
-        private void btnHelp_Click(object sender, EventArgs e)
+        private void BtnHelp_Click(object sender, EventArgs e)
         {
             MessageBox.Show("I'd love to help, please visit https://github.com/JustAHoax/LoonieTunes for the README containing the instructions.");
         }
@@ -77,25 +78,24 @@ namespace Loonie_Tunes
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             btnCopy.Visible = false;
-            var filePath = string.Empty;
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "txt files (*.txt)|*.Lua|All files (*.*)|*.*";
+                openFileDialog.Filter = V;
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file
-                    filePath = openFileDialog.FileName;
+                    string filePath = openFileDialog.FileName;
                     txtPath.Text = filePath;
                     btnProg.Visible = true;
                     PopulateDropDown();
                 }
             }
         }
-        private void btnCopy_Click(object sender, EventArgs e)
+        private void BtnCopy_Click(object sender, EventArgs e)
         {
             var realmName = cmbRealmName.Text;
             clipBoard.SwapClipboardText(File.ReadAllText(rootDir + @"\\" + realmName + "Final.csv"));
@@ -157,15 +157,20 @@ namespace Loonie_Tunes
                     cmbRealmName.SelectedIndex = 0;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Could not populate Realm List drop down");
             }
         }
 
-        private void btnAppData_Click(object sender, EventArgs e)
+        private void BtnAppData_Click(object sender, EventArgs e)
         {
             Process.Start("explorer.exe", string.Format("/open,\"{0}\"", rootDir));
+        }
+
+        private void TmrOld_Tick(object sender, EventArgs e)
+        {
+            lblRefreshCSV.Visible = !IsAboveThreshhold(rootDir + @"\\Final.csv", 2);
         }
     }
 }
