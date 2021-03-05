@@ -7,6 +7,8 @@ Hey everyone! This is a windows Desktop application, which I have named "Loonie 
 ## How
 If you'd like to support me and have access to my Spreadsheet that makes use of this CSV output, head over to my patreon page. You can be a part of future updates to this app, as well as anything else I work on. Thank you!
 
+<a href="https://patreon.com/hoaxdt"><img src="https://img.shields.io/endpoint.svg?url=https://moshef9.wixsite.com/patreon-badge/_functions/badge/?username=hoaxdt" alt="Patreon donate button" /> </a>
+
 ## Installation
 To install download the LoonieTunes.msi file, and install the application.
 
