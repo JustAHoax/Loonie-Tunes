@@ -18,6 +18,9 @@ namespace Loonie_Tunes
         private BindingSource bindingSource;
         private string rootDir;
         public string fileContent;
+        private Assembly assembly;
+        private string wowItemCsv;
+        private Progress<int> progressBar;
 
         public MainForm()
         {
@@ -25,48 +28,45 @@ namespace Loonie_Tunes
         }
         private async void BtnProg_Click(object sender, EventArgs e)
         {
-            if (txtPath.Text != "" && txtPath.Text.IndexOf("tradeskillmaster_apphelper\\appdata.lua", StringComparison.OrdinalIgnoreCase) >= 0)
+            if (appDataFileCheck())
             {
-                Assembly assembly = Assembly.GetExecutingAssembly();
-                const string wowItemCsv = "Loonie_Tunes.Resources.AuctionItemNames.csv";
-
-                lblProgress.Visible = true;
-                progBar.Visible = true;
-                var progress = new Progress<int>(value =>
-                {
-                    progBar.Value = value;
-                });
-
+                loadBar();
+                progBar.Value = 0;
                 lblProgress.Text = "Reading TSM File...";
                 var appDataFile = File.ReadAllText(txtPath.Text);
                 var realmName = cmbRealmName.Text;
-                List<AuctionItem> tsmParse = await Task.Run(() => csvParse.ParseTSM(appDataFile, progress, realmName));
-                //List<AuctionItem> tsmParse = csvParse.ParseTSM(appDataFile);
+                var region = cmbRegion.Text;
+                List<AuctionItem> tsmParseRealm = await Task.Run(() => csvParse.ParseTSMRealm(appDataFile, progressBar, realmName));
                 lblProgress.Text = "Reading TSM File...Done";
 
-                //using (var file = File.Create(filePath + @"\\TSMParse.csv"))
                 lblProgress.Text = "Parsing TSM AppData...";
-                await Task.Run(() => csvParse.ListToCSV(tsmParse, rootDir + @"\\TSMParse.csv", progress));
+                await Task.Run(() => csvParse.ListToCSV(tsmParseRealm, rootDir + @"\\TSMParse.csv", progressBar));
                 lblProgress.Text = "Parsing TSM AppData...Done";
 
                 lblProgress.Text = "Reading known Item Entries...";
-                List<WoWItem> wowItemParse = await Task.Run(() => csvParse.ReadWoWCSV(wowItemCsv, progress));
+                List<WoWItem> wowItemParse = await Task.Run(() => csvParse.ReadWoWCSV(wowItemCsv, progressBar));
                 lblProgress.Text = "Reading known Item Entries...";
 
-                lblProgress.Text = "Reading Auction Price Data...";
-                List<AuctionItem> auctionItemParse = await Task.Run(() => csvParse.ReadAuctionCsv(rootDir + @"\\TSMParse.csv", progress));
-                lblProgress.Text = "Reading Auction price data...Done";
+                //lblProgress.Text = "Reading Auction Price Data...";
+                //List<AuctionItem> auctionItemParse = await Task.Run(() => csvParse.ReadAuctionCsv(rootDir + @"\\TSMParse.csv", progressBar));
+                //lblProgress.Text = "Reading Auction price data...Done";
 
                 lblProgress.Text = "Linking Item Entries with Auction Price Data...";
-                await Task.Run(() => csvParse.CombinedCSV(auctionItemParse, wowItemParse, rootDir + @"\\" + realmName + "Final.csv", progress));
+                await Task.Run(() => csvParse.CombinedCSV(tsmParseRealm, wowItemParse, rootDir + @"\\" + realmName + "Final.csv", progressBar));
                 lblProgress.Text = "Linking Item Entries with Auction Price Data...Done";
                 MessageBox.Show("Complete!");
                 btnCopy.Visible = true;
             }
-            else
+        }
+
+        private Boolean appDataFileCheck()
+        {
+            if (txtPath.Text?.Length == 0 || txtPath.Text.IndexOf("tradeskillmaster_apphelper\\appdata.lua", StringComparison.OrdinalIgnoreCase) < 0)
             {
                 MessageBox.Show("You have Selected a wrong or invalid file. Please try again.");
+                return false;
             }
+            return true;
         }
 
         private void BtnHelp_Click(object sender, EventArgs e)
@@ -110,8 +110,10 @@ namespace Loonie_Tunes
             csvParse = new CsvParse();
             clipBoard = new ClipBoard();
             txtPath.Text = Properties.Settings.Default.appDataPath;
+            assembly = Assembly.GetExecutingAssembly();
+            wowItemCsv = "Loonie_Tunes.Resources.AuctionItemNames.csv";
             var roamingDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            rootDir = Path.Combine(roamingDirectory, @"LoonieTunes");
+            rootDir = Path.Combine(roamingDirectory, "LoonieTunes");
             Directory.CreateDirectory(rootDir);
             if (!string.IsNullOrEmpty(txtPath.Text))
                 btnProg.Visible = true;
@@ -171,6 +173,49 @@ namespace Loonie_Tunes
         private void TmrOld_Tick(object sender, EventArgs e)
         {
             lblRefreshCSV.Visible = !IsAboveThreshhold(rootDir + @"\\Final.csv", 2);
+        }
+
+        private void loadBar()
+        {
+            lblProgress.Visible = true;
+            progBar.Visible = true;
+            progressBar = new Progress<int>(value =>
+            {
+                progBar.Value = value;
+            });
+        }
+
+        private async void btnRegionCSV_Click(object sender, EventArgs e)
+        {
+            if (appDataFileCheck())
+            {
+                loadBar();
+                progBar.Value = 0;
+                lblProgress.Text = "Reading TSM File...";
+                var appDataFile = File.ReadAllText(txtPath.Text);
+                var region = cmbRegion.Text;
+                List<AuctionItem> tsmParseRegion = await Task.Run(() => csvParse.ParseTSMRegion(appDataFile, progressBar, region));
+                lblProgress.Text = "Reading TSM File...Done";
+
+                lblProgress.Text = "Parsing TSM AppData...";
+                await Task.Run(() => csvParse.ListToCSV(tsmParseRegion, rootDir + @"\\TSMParse.csv", progressBar));
+                lblProgress.Text = "Parsing TSM AppData...Done";
+
+                lblProgress.Text = "Reading known Item Entries...";
+                List<WoWItem> wowItemParse = await Task.Run(() => csvParse.ReadWoWCSV(wowItemCsv, progressBar));
+                lblProgress.Text = "Reading known Item Entries...";
+
+                //lblProgress.Text = "Reading Auction Price Data...";
+                //List<AuctionItem> auctionItemParse = await Task.Run(() => csvParse.ReadAuctionCsv(rootDir + @"\\TSMParse.csv", progressBar));
+                //lblProgress.Text = "Reading Auction price data...Done";
+
+                lblProgress.Text = "Linking Item Entries with Auction Price Data...";
+                await Task.Run(() => csvParse.CombinedCSV(tsmParseRegion, wowItemParse, rootDir + @"\\" + region + "Final.csv", progressBar));
+                lblProgress.Text = "Linking Item Entries with Auction Price Data...Done";
+                MessageBox.Show("Complete!");
+                btnCopy.Visible = true;
+            }
+
         }
     }
 }

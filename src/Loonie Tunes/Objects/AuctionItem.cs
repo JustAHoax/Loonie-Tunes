@@ -8,5 +8,7 @@
         public string MinBuyout { get; set; }
         public string Historical { get; set; }
         public string NumAuctions { get; set; }
+        public string regionSoldPerDay { get; set; }
+        public string regionSalePerc { get; set; }
     }
 }

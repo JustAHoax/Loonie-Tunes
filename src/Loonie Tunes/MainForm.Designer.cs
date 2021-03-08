@@ -47,6 +47,7 @@ namespace Loonie_Tunes
             this.btnAppData = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
             this.tmrOld = new System.Windows.Forms.Timer(this.components);
+            this.btnRegionCSV = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCopy
@@ -56,9 +57,9 @@ namespace Loonie_Tunes
             this.btnCopy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCopy.Location = new System.Drawing.Point(315, 380);
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(186, 36);
+            this.btnCopy.Size = new System.Drawing.Size(186, 46);
             this.btnCopy.TabIndex = 4;
-            this.btnCopy.Text = "Copy CSV to Clipboard";
+            this.btnCopy.Text = "Copy Realm CSV to Clipboard";
             this.btnCopy.UseVisualStyleBackColor = false;
             this.btnCopy.Visible = false;
             this.btnCopy.Click += new System.EventHandler(this.BtnCopy_Click);
@@ -129,7 +130,7 @@ namespace Loonie_Tunes
             this.btnProg.Name = "btnProg";
             this.btnProg.Size = new System.Drawing.Size(159, 53);
             this.btnProg.TabIndex = 3;
-            this.btnProg.Text = "Convert";
+            this.btnProg.Text = "Build CSV";
             this.btnProg.UseVisualStyleBackColor = false;
             this.btnProg.Visible = false;
             this.btnProg.Click += new System.EventHandler(this.BtnProg_Click);
@@ -208,7 +209,7 @@ namespace Loonie_Tunes
             this.btnAppData.Name = "btnAppData";
             this.btnAppData.Size = new System.Drawing.Size(127, 51);
             this.btnAppData.TabIndex = 5;
-            this.btnAppData.Text = "Open File Location";
+            this.btnAppData.Text = "Open CSV File Location";
             this.btnAppData.UseVisualStyleBackColor = false;
             this.btnAppData.Click += new System.EventHandler(this.BtnAppData_Click);
             // 
@@ -219,12 +220,26 @@ namespace Loonie_Tunes
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(72, 13);
             this.lblVersion.TabIndex = 28;
-            this.lblVersion.Text = "Version: 1.0.6";
+            this.lblVersion.Text = "Version: 1.1.0";
             // 
             // tmrOld
             // 
+            this.tmrOld.Enabled = true;
             this.tmrOld.Interval = 5000;
             this.tmrOld.Tick += new System.EventHandler(this.TmrOld_Tick);
+            // 
+            // btnRegionCSV
+            // 
+            this.btnRegionCSV.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegionCSV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegionCSV.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegionCSV.Location = new System.Drawing.Point(12, 280);
+            this.btnRegionCSV.Name = "btnRegionCSV";
+            this.btnRegionCSV.Size = new System.Drawing.Size(134, 53);
+            this.btnRegionCSV.TabIndex = 7;
+            this.btnRegionCSV.Text = "Build Region CSV";
+            this.btnRegionCSV.UseVisualStyleBackColor = false;
+            this.btnRegionCSV.Click += new System.EventHandler(this.btnRegionCSV_Click);
             // 
             // MainForm
             // 
@@ -232,6 +247,7 @@ namespace Loonie_Tunes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegionCSV);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnAppData);
             this.Controls.Add(this.cmbRegion);
@@ -277,5 +293,6 @@ namespace Loonie_Tunes
         private System.Windows.Forms.Button btnAppData;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Timer tmrOld;
+        private System.Windows.Forms.Button btnRegionCSV;
     }
 }
