@@ -53,38 +53,38 @@
 171390,Ceremonious Blade
 171391,Ceremonious Shield
 171392,Ceremonious Warglaive
-171412::i+15,Shadowghast Breastplate
-171412::i+35,Shadowghast Breastplate
-171412::i+50,Shadowghast Breastplate
-171412::i+60,Shadowghast Breastplate
-171413::i+15,Shadowghast Sabatons
-171413::i+35,Shadowghast Sabatons
-171413::i+50,Shadowghast Sabatons
-171413::i+60,Shadowghast Sabatons
-171414::i+15,Shadowghast Gauntlets
-171414::i+35,Shadowghast Gauntlets
-171414::i+50,Shadowghast Gauntlets
-171414::i+60,Shadowghast Gauntlets
-171415::i+15,Shadowghast Helm
-171415::i+35,Shadowghast Helm
-171415::i+50,Shadowghast Helm
-171415::i+60,Shadowghast Helm
-171416::i+15,Shadowghast Greaves
-171416::i+35,Shadowghast Greaves
-171416::i+50,Shadowghast Greaves
-171416::i+60,Shadowghast Greaves
-171417::i+15,Shadowghast Pauldrons
-171417::i+35,Shadowghast Pauldrons
-171417::i+50,Shadowghast Pauldrons
-171417::i+60,Shadowghast Pauldrons
-171418::i+15,Shadowghast Waistguard
-171418::i+35,Shadowghast Waistguard
-171418::i+50,Shadowghast Waistguard
-171418::i+60,Shadowghast Waistguard
-171419::i+15,Shadowghast Armguards
-171419::i+35,Shadowghast Armguards
-171419::i+50,Shadowghast Armguards
-171419::i+60,Shadowghast Armguards
+171412::i+15,Shadowghast Breastplate1
+171412::i+35,Shadowghast Breastplate2
+171412::i+50,Shadowghast Breastplate3
+171412::i+60,Shadowghast Breastplate4
+171413::i+15,Shadowghast Sabatons1
+171413::i+35,Shadowghast Sabatons2
+171413::i+50,Shadowghast Sabatons3
+171413::i+60,Shadowghast Sabatons4
+171414::i+15,Shadowghast Gauntlets1
+171414::i+35,Shadowghast Gauntlets2
+171414::i+50,Shadowghast Gauntlets3
+171414::i+60,Shadowghast Gauntlets4
+171415::i+15,Shadowghast Helm1
+171415::i+35,Shadowghast Helm2
+171415::i+50,Shadowghast Helm3
+171415::i+60,Shadowghast Helm4
+171416::i+15,Shadowghast Greaves1
+171416::i+35,Shadowghast Greaves2
+171416::i+50,Shadowghast Greaves3
+171416::i+60,Shadowghast Greaves4
+171417::i+15,Shadowghast Pauldrons1
+171417::i+35,Shadowghast Pauldrons2
+171417::i+50,Shadowghast Pauldrons3
+171417::i+60,Shadowghast Pauldrons4
+171418::i+15,Shadowghast Waistguard1
+171418::i+35,Shadowghast Waistguard2
+171418::i+50,Shadowghast Waistguard3
+171418::i+60,Shadowghast Waistguard4
+171419::i+15,Shadowghast Armguards1
+171419::i+35,Shadowghast Armguards2
+171419::i+50,Shadowghast Armguards3
+171419::i+60,Shadowghast Armguards4
 171428,Shadowghast Ingot
 171436,Porous Sharpening Stone
 171437,Shaded Sharpening Stone
@@ -93,20 +93,36 @@
 171441,Laestrite Skeleton Key
 171442,Shadowsteel Breastplate
 171442::i168,Shadowsteel Breastplate (168)
+171442::i200,Shadowsteel Breastplate (200)
+171442::i230,Shadowsteel Breastplate (230)
 171443,Shadowsteel Sabatons
 171443::i168,Shadowsteel Sabatons (168)
+171443::i200,Shadowsteel Sabatons (200)
+171443::i230,Shadowsteel Sabatons (230)
 171444,Shadowsteel Gauntlets
 171444::i168,Shadowsteel Gauntlets (168)
+171444::i200,Shadowsteel Gauntlets (200)
+171444::i230,Shadowsteel Gauntlets (230)
 171445,Shadowsteel Helm
 171445::i168,Shadowsteel Helm (168)
+171445::i200,Shadowsteel Helm (200)
+171445::i230,Shadowsteel Helm (230)
 171446,Shadowsteel Greaves
 171446::i168,Shadowsteel Greaves (168)
+171446::i200,Shadowsteel Greaves (200)
+171446::i230,Shadowsteel Greaves (230)
 171447,Shadowsteel Pauldrons
 171447::i168,Shadowsteel Pauldrons (168)
+171447::i200,Shadowsteel Pauldrons (200)
+171447::i230,Shadowsteel Pauldrons (230)
 171448,Shadowsteel Waistguard
 171448::i168,Shadowsteel Waistguard (168)
+171448::i200,Shadowsteel Waistguard (200)
+171448::i230,Shadowsteel Waistguard (230)
 171449,Shadowsteel Armguards
 171449::i168,Shadowsteel Armguards (168)
+171449::i200,Shadowsteel Armguards (200)
+171449::i230,Shadowsteel Armguards (230)
 171828,Laestrite Ore
 171829,Solenium Ore
 171830,Oxxein Ore
@@ -163,100 +179,132 @@
 172249,Desolate Scale Armguards
 172250,Shadebound Vest
 172250::i168,Shadebound Vest (168)
+172250::i200,Shadebound Vest (200)
+172250::i230,Shadebound Vest (230)
 172251,Shadebound Treads
 172251::i168,Shadebound Treads (168)
+172251::i200,Shadebound Treads (200)
+172251::i230,Shadebound Treads (230)
 172252,Shadebound Gauntlets
 172252::i168,Shadebound Gauntlets (168)
+172252::i200,Shadebound Gauntlets (200)
+172252::i230,Shadebound Gauntlets (230)
 172253,Shadebound Helm
 172253::i168,Shadebound Helm (168)
+172253::i200,Shadebound Helm (200)
+172253::i230,Shadebound Helm (230)
 172254,Shadebound Greaves
 172254::i168,Shadebound Greaves (168)
+172254::i200,Shadebound Greaves (200)
+172254::i230,Shadebound Greaves (230)
 172255,Shadebound Pauldrons
 172255::i168,Shadebound Pauldrons (168)
+172255::i200,Shadebound Pauldrons (200)
+172255::i230,Shadebound Pauldrons (230)
 172256,Shadebound Waistguard
 172256::i168,Shadebound Waistguard (168)
+172256::i200,Shadebound Waistguard (200)
+172256::i230,Shadebound Waistguard (230)
 172257,Shadebound Armguards
 172257::i168,Shadebound Armguards (168)
+172257::i200,Shadebound Armguards (200)
+172257::i230,Shadebound Armguards (230)
 172258,Shadowscale Vest
 172258::i168,Shadowscale Vest (168)
+172258::i200,Shadowscale Vest (200)
+172258::i230,Shadowscale Vest (230)
 172259,Shadowscale Treads
 172259::i168,Shadowscale Treads (168)
+172259::i200,Shadowscale Treads (200)
+172259::i230,Shadowscale Treads (230)
 172260,Shadowscale Gauntlets
 172260::i168,Shadowscale Gauntlets (168)
+172260::i200,Shadowscale Gauntlets (200)
+172260::i230,Shadowscale Gauntlets (230)
 172261,Shadowscale Helm
 172261::i168,Shadowscale Helm (168)
+172261::i200,Shadowscale Helm (200)
+172261::i230,Shadowscale Helm (230)
 172262,Shadowscale Greaves
 172262::i168,Shadowscale Greaves (168)
+172262::i200,Shadowscale Greaves (200)
+172262::i230,Shadowscale Greaves (230)
 172263,Shadowscale Pauldrons
 172263::i168,Shadowscale Pauldrons (168)
+172263::i200,Shadowscale Pauldrons (200)
+172263::i230,Shadowscale Pauldrons (230)
 172264,Shadowscale Waistguard
 172264::i168,Shadowscale Waistguard (168)
+172264::i200,Shadowscale Waistguard (200)
+172264::i230,Shadowscale Waistguard (230)
 172265,Shadowscale Armguards
 172265::i168,Shadowscale Armguards (168)
-172314::i+15,Umbrahide Vest
-172314::i+35,Umbrahide Vest
-172314::i+50,Umbrahide Vest
-172314::i+60,Umbrahide Vest
-172315::i+15,Umbrahide Treads
-172315::i+35,Umbrahide Treads
-172315::i+50,Umbrahide Treads
-172315::i+60,Umbrahide Treads
-172316::i+15,Umbrahide Gauntlets
-172316::i+35,Umbrahide Gauntlets
-172316::i+50,Umbrahide Gauntlets
-172316::i+60,Umbrahide Gauntlets
-172317::i+15,Umbrahide Helm
-172317::i+35,Umbrahide Helm
-172317::i+50,Umbrahide Helm
-172317::i+60,Umbrahide Helm
-172318::i+15,Umbrahide Leggings
-172318::i+35,Umbrahide Leggings
-172318::i+50,Umbrahide Leggings
-172318::i+60,Umbrahide Leggings
-172319::i+15,Umbrahide Pauldrons
-172319::i+35,Umbrahide Pauldrons
-172319::i+50,Umbrahide Pauldrons
-172319::i+60,Umbrahide Pauldrons
-172320::i+15,Umbrahide Waistguard
-172320::i+35,Umbrahide Waistguard
-172320::i+50,Umbrahide Waistguard
-172320::i+60,Umbrahide Waistguard
-172321::i+15,Umbrahide Armguards
-172321::i+35,Umbrahide Armguards
-172321::i+50,Umbrahide Armguards
-172321::i+60,Umbrahide Armguards
-172322::i+15,Boneshatter Vest
-172322::i+35,Boneshatter Vest
-172322::i+50,Boneshatter Vest
-172322::i+60,Boneshatter Vest
-172323::i+15,Boneshatter Treads
-172323::i+35,Boneshatter Treads
-172323::i+50,Boneshatter Treads
-172323::i+60,Boneshatter Treads
-172324::i+15,Boneshatter Gauntlets
-172324::i+35,Boneshatter Gauntlets
-172324::i+50,Boneshatter Gauntlets
-172324::i+60,Boneshatter Gauntlets
-172325::i+15,Boneshatter Helm
-172325::i+35,Boneshatter Helm
-172325::i+50,Boneshatter Helm
-172325::i+60,Boneshatter Helm
-172326::i+15,Boneshatter Greaves
-172326::i+35,Boneshatter Greaves
-172326::i+50,Boneshatter Greaves
-172326::i+60,Boneshatter Greaves
-172327::i+15,Boneshatter Pauldrons
-172327::i+35,Boneshatter Pauldrons
-172327::i+50,Boneshatter Pauldrons
-172327::i+60,Boneshatter Pauldrons
-172328::i+15,Boneshatter Waistguard
-172328::i+35,Boneshatter Waistguard
-172328::i+50,Boneshatter Waistguard
-172328::i+60,Boneshatter Waistguard
-172329::i+15,Boneshatter Armguards
-172329::i+35,Boneshatter Armguards
-172329::i+50,Boneshatter Armguards
-172329::i+60,Boneshatter Armguards
+172265::i200,Shadowscale Armguards (200)
+172265::i230,Shadowscale Armguards (230)
+172314::i+15,Umbrahide Vest1
+172314::i+35,Umbrahide Vest2
+172314::i+50,Umbrahide Vest3
+172314::i+60,Umbrahide Vest4
+172315::i+15,Umbrahide Treads1
+172315::i+35,Umbrahide Treads2
+172315::i+50,Umbrahide Treads3
+172315::i+60,Umbrahide Treads4
+172316::i+15,Umbrahide Gauntlets1
+172316::i+35,Umbrahide Gauntlets2
+172316::i+50,Umbrahide Gauntlets3
+172316::i+60,Umbrahide Gauntlets4
+172317::i+15,Umbrahide Helm1
+172317::i+35,Umbrahide Helm2
+172317::i+50,Umbrahide Helm3
+172317::i+60,Umbrahide Helm4
+172318::i+15,Umbrahide Leggings1
+172318::i+35,Umbrahide Leggings2
+172318::i+50,Umbrahide Leggings3
+172318::i+60,Umbrahide Leggings4
+172319::i+15,Umbrahide Pauldrons1
+172319::i+35,Umbrahide Pauldrons2
+172319::i+50,Umbrahide Pauldrons3
+172319::i+60,Umbrahide Pauldrons4
+172320::i+15,Umbrahide Waistguard1
+172320::i+35,Umbrahide Waistguard2
+172320::i+50,Umbrahide Waistguard3
+172320::i+60,Umbrahide Waistguard4
+172321::i+15,Umbrahide Armguards1
+172321::i+35,Umbrahide Armguards2
+172321::i+50,Umbrahide Armguards3
+172321::i+60,Umbrahide Armguards4
+172322::i+15,Boneshatter Vest1
+172322::i+35,Boneshatter Vest2
+172322::i+50,Boneshatter Vest3
+172322::i+60,Boneshatter Vest4
+172323::i+15,Boneshatter Treads1
+172323::i+35,Boneshatter Treads2
+172323::i+50,Boneshatter Treads3
+172323::i+60,Boneshatter Treads4
+172324::i+15,Boneshatter Gauntlets1
+172324::i+35,Boneshatter Gauntlets2
+172324::i+50,Boneshatter Gauntlets3
+172324::i+60,Boneshatter Gauntlets4
+172325::i+15,Boneshatter Helm1
+172325::i+35,Boneshatter Helm2
+172325::i+50,Boneshatter Helm3
+172325::i+60,Boneshatter Helm4
+172326::i+15,Boneshatter Greaves1
+172326::i+35,Boneshatter Greaves2
+172326::i+50,Boneshatter Greaves3
+172326::i+60,Boneshatter Greaves4
+172327::i+15,Boneshatter Pauldrons1
+172327::i+35,Boneshatter Pauldrons2
+172327::i+50,Boneshatter Pauldrons3
+172327::i+60,Boneshatter Pauldrons4
+172328::i+15,Boneshatter Waistguard1
+172328::i+35,Boneshatter Waistguard2
+172328::i+50,Boneshatter Waistguard3
+172328::i+60,Boneshatter Waistguard4
+172329::i+15,Boneshatter Armguards1
+172329::i+35,Boneshatter Armguards2
+172329::i+50,Boneshatter Armguards3
+172329::i+60,Boneshatter Armguards4
 172346,Desolate Armor Kit
 172347,Heavy Desolate Armor Kit
 172348,Desolate Leather Cestus
@@ -344,12 +392,20 @@
 173130,Masterful Jewel Cluster
 173131,Versatile Solenium Ring
 173131::i168,Versatile Solenium Ring (168)
+173131::i200,Versatile Solenium Ring (200)
+173131::i230,Versatile Solenium Ring (230)
 173132,Masterful Phaedrum Ring
 173132::i168, Masterful Phaedrum Ring (168)
+173132::i200, Masterful Phaedrum Ring (200)
+173132::i230, Masterful Phaedrum Ring (230)
 173133,Quick Oxxein Ring
 173133::i168,Quick Oxxein Ring (168)
+173133::i200,Quick Oxxein Ring (200)
+173133::i230,Quick Oxxein Ring (230)
 173134,Deadly Sinvyr Ring
 173134::i168,Deadly Sinvyr Ring (168)
+173134::i200,Deadly Sinvyr Ring (200)
+173134::i230,Deadly Sinvyr Ring (230)
 173135,Versatile Laestrite Band
 173136,Masterful Laestrite Band
 173137,Quick Laestrite Band
@@ -360,12 +416,20 @@
 173143,Deadly Laestrite Choker
 173144,Versatile Solenium Necklace
 173144::i168,Versatile Solenium Necklace (168)
+173144::i200,Versatile Solenium Necklace (200)
+173144::i230,Versatile Solenium Necklace (230)
 173145,Masterful Phaedrum Necklace
 173145::i168,Masterful Phaedrum Necklace (168)
+173145::i200,Masterful Phaedrum Necklace (200)
+173145::i230,Masterful Phaedrum Necklace (230)
 173146,Quick Oxxein Necklace
 173146::i168,Quick Oxxein Necklace (168)
+173146::i200,Quick Oxxein Necklace (200)
+173146::i230,Quick Oxxein Necklace (230)
 173147,Deadly Sinvyr Necklace
 173147::i168,Deadly Sinvyr Necklace (168)
+173147::i200,Deadly Sinvyr Necklace (200)
+173147::i230,Deadly Sinvyr Necklace (230)
 173161,Missive of Critical Strike
 173160,Missive of Haste
 173162,Missive of Mastery
@@ -389,58 +453,76 @@
 173204,Lightless Silk
 173214,Shadowlace Tunic
 173214::i168,Shadowlace Tunic (168)
+173214::i200,Shadowlace Tunic (200)
+173214::i230,Shadowlace Tunic (230)
 173215,Shadowlace Cloak
 173215::i168,Shadowlace Cloak (168)
+173215::i200,Shadowlace Cloak (200)
+173215::i230,Shadowlace Cloak (230)
 173216,Shadowlace Footwraps
 173216::i168,Shadowlace Footwraps (168)
+173216::i200,Shadowlace Footwraps (200)
+173216::i230,Shadowlace Footwraps (230)
 173217,Shadowlace Handwraps
 173217::i168,Shadowlace Handwraps (168)
+173217::i200,Shadowlace Handwraps (200)
+173217::i230,Shadowlace Handwraps (230)
 173218,Shadowlace Cowl
 173218::i168,Shadowlace Cowl (168)
+173218::i200,Shadowlace Cowl (200)
+173218::i230,Shadowlace Cowl (230)
 173219,Shadowlace Trousers
 173219::i168,Shadowlace Trousers (168)
+173219::i200,Shadowlace Trousers (200)
+173219::i230,Shadowlace Trousers (230)
 173220,Shadowlace Mantle
 173220::i168,Shadowlace Mantle (168)
+173220::i200,Shadowlace Mantle (200)
+173220::i230,Shadowlace Mantle (230)
 173221,Shadowlace Cord
 173221::i168,Shadowlace Cord (168)
+173221::i200,Shadowlace Cord (200)
+173221::i230,Shadowlace Cord (230)
 173222,Shadowlace Cuffs
 173222::i168,Shadowlace Cuffs (168)
-173241::i+15,Grim-Veiled Robe
-173241::i+35,Grim-Veiled Robe
-173241::i+50,Grim-Veiled Robe
-173241::i+60,Grim-Veiled Robe
-173242::i+15,Grim-Veiled Cape
-173242::i+35,Grim-Veiled Cape
-173242::i+50,Grim-Veiled Cape
-173242::i+60,Grim-Veiled Cape
-173243::i+15,Grim-Veiled Sandals
-173243::i+35,Grim-Veiled Sandals
-173243::i+50,Grim-Veiled Sandals
-173243::i+60,Grim-Veiled Sandals
-173244::i+15,Grim-Veiled Mittens
-173244::i+35,Grim-Veiled Mittens
-173244::i+50,Grim-Veiled Mittens
-173244::i+60,Grim-Veiled Mittens
-173245::i+15,Grim-Veiled Hood
-173245::i+35,Grim-Veiled Hood
-173245::i+50,Grim-Veiled Hood
-173245::i+60,Grim-Veiled Hood
-173246::i+15,Grim-Veiled Pants
-173246::i+35,Grim-Veiled Pants
-173246::i+50,Grim-Veiled Pants
-173246::i+60,Grim-Veiled Pants
-173247::i+15,Grim-Veiled Spaulders
-173247::i+35,Grim-Veiled Spaulders
-173247::i+50,Grim-Veiled Spaulders
-173247::i+60,Grim-Veiled Spaulders
-173248::i+15,Grim-Veiled Belt
-173248::i+35,Grim-Veiled Belt
-173248::i+50,Grim-Veiled Belt
-173248::i+60,Grim-Veiled Belt
-173249::i+15,Grim-Veiled Bracers
-173249::i+35,Grim-Veiled Bracers
-173249::i+50,Grim-Veiled Bracers
-173249::i+60,Grim-Veiled Bracers
+173222::i200,Shadowlace Cuffs (200)
+173222::i230,Shadowlace Cuffs (230)
+173241::i+15,Grim-Veiled Robe1
+173241::i+35,Grim-Veiled Robe2
+173241::i+50,Grim-Veiled Robe3
+173241::i+60,Grim-Veiled Robe4
+173242::i+15,Grim-Veiled Cape1
+173242::i+35,Grim-Veiled Cape2
+173242::i+50,Grim-Veiled Cape3
+173242::i+60,Grim-Veiled Cape4
+173243::i+15,Grim-Veiled Sandals1
+173243::i+35,Grim-Veiled Sandals2
+173243::i+50,Grim-Veiled Sandals3
+173243::i+60,Grim-Veiled Sandals4
+173244::i+15,Grim-Veiled Mittens1
+173244::i+35,Grim-Veiled Mittens2
+173244::i+50,Grim-Veiled Mittens3
+173244::i+60,Grim-Veiled Mittens4
+173245::i+15,Grim-Veiled Hood1
+173245::i+35,Grim-Veiled Hood2
+173245::i+50,Grim-Veiled Hood3
+173245::i+60,Grim-Veiled Hood4
+173246::i+15,Grim-Veiled Pants1
+173246::i+35,Grim-Veiled Pants2
+173246::i+50,Grim-Veiled Pants3
+173246::i+60,Grim-Veiled Pants4
+173247::i+15,Grim-Veiled Spaulders1
+173247::i+35,Grim-Veiled Spaulders2
+173247::i+50,Grim-Veiled Spaulders3
+173247::i+60,Grim-Veiled Spaulders4
+173248::i+15,Grim-Veiled Belt1
+173248::i+35,Grim-Veiled Belt2
+173248::i+50,Grim-Veiled Belt3
+173248::i+60,Grim-Veiled Belt4
+173249::i+15,Grim-Veiled Bracers1
+173249::i+35,Grim-Veiled Bracers2
+173249::i+50,Grim-Veiled Bracers3
+173249::i+60,Grim-Veiled Bracers4
 173428,Soul Keeper's Column
 175788,Tranquil Pigment
 175924,Contract: The Undying Army
@@ -452,8 +534,14 @@
 177715,Enchant Chest - Eternal Bounds
 177716,Enchant Chest - Sacred Stats
 177962,Enchant Chest - Eternal Stats
-178926,Shadowghast Ring
-178927,Shadowghast Necklace
+178926::i+15,Shadowghast Ring1
+178926::i+35,Shadowghast Ring2
+178926::i+50,Shadowghast Ring3
+178926::i+60,Shadowghast Ring4
+178927::i+15,Shadowghast Necklace1
+178927::i+35,Shadowghast Necklace2
+178927::i+50,Shadowghast Necklace3
+178927::i+60,Shadowghast Necklace4
 179314,Creeping Crawler Meat
 179315,Shadowy Shank
 180208,PHA7-YNX
@@ -469,3 +557,15 @@
 184090,Potion of the Psychopomp's Speed
 184479,Shrouded Cloth Bag
 184480,Lightless Silk Pouch
+186973,Anima-ted Leash
+186662,Vantus Rune: Sanctum of Domination
+186981,Porous Stone Statue
+186982,Shaded Stone Statue
+186985,Elusive Pet Treat
+186702,Pallid Bone Flute
+186686,Pallid Oracle Bones
+186697,Blossom Burst
+186701,Glory Burst
+186700,Marrow Burst
+186698,Torch Burst
+186699,Widow Burst
