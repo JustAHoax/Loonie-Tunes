@@ -220,7 +220,7 @@ namespace Loonie_Tunes
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(72, 13);
             this.lblVersion.TabIndex = 28;
-            this.lblVersion.Text = "Version: 1.1.0";
+            this.lblVersion.Text = "Version: 1.2.2";
             // 
             // tmrOld
             // 
