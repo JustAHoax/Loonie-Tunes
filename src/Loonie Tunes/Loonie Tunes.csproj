@@ -52,7 +52,7 @@
     <StartupObject>Loonie_Tunes.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>17F37BD1EF360B1F8CE68F8FF7192B4C911218EA</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>20AE62611A392B3E5F0328507F789CF21B01BDB1</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Loonie Tunes_TemporaryKey.pfx</ManifestKeyFile>
