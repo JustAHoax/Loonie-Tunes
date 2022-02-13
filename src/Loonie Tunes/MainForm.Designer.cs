@@ -119,7 +119,7 @@ namespace Loonie_Tunes
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 13);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Created and Maintained by DigitalHoax 2021";
+            this.label1.Text = "Created and Maintained by DigitalHoax 2022";
             // 
             // btnProg
             // 
@@ -220,7 +220,7 @@ namespace Loonie_Tunes
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(72, 13);
             this.lblVersion.TabIndex = 28;
-            this.lblVersion.Text = "Version: 1.2.2";
+            this.lblVersion.Text = "Version: 1.3.1";
             // 
             // tmrOld
             // 
