@@ -1,13 +1,7 @@
-# This is currently Windows ONLY sorry, I will work towards making this multiplatform supported
+# This is currently Windows ONLY, not sure when that will change
 
 # LoonieTunes
 Hey everyone! This is a windows Desktop application, which I have named "Loonie Tunes". It is designed to analyze the AppDate.lua file that TradeSkillMaster Desktop application outputs. It will generate Final csv document, or in the application a csv you can copy. This can then be pasted into a spreadsheet as backend pricing data.
-
-# Support Me!
-## How
-If you'd like to support me and have access to my Spreadsheet that makes use of this CSV output, head over to my patreon page. You can be a part of future updates to this app, as well as anything else I work on. Thank you!
-
-<a href="https://patreon.com/hoaxdt"><img src="https://img.shields.io/endpoint.svg?url=https://moshef9.wixsite.com/patreon-badge/_functions/badge/?username=hoaxdt" alt="Patreon donate button" /> </a>
 
 ## Installation
 To install download the LoonieTunes.msi file, and install the application.
@@ -19,7 +13,7 @@ To install download the LoonieTunes.msi file, and install the application.
 ## How this works
 
 ### The Code
-As stated above, the Desktop application will read the AppData.lua file TSM outputs. It will pull all the items within that file and match their ids with appropriate names for those items. It will then create a final csv with which you can use however you would like. In this case I would suggest you use it as backend pricing data for a spreadsheet, so you can see where profits lie in your professions in World of Warcraft.
+As stated above, the Desktop application will read the AppData.lua file TSM outputs. It will pull all the items within that file and match their ids with appropriate names for those items. It will then create a final csv with which you can use however you would like. In this case I would suggest you use it as backend pricing data for a spreadsheet, so you can see where profits are in your professions in World of Warcraft.
 
 ## Steps
 
